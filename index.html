@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentations Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+ 
+  <div class="grid">
+    <nav id="navbar" class="sub-nav">
+      <header class="main-header bottom">React Documentations</header>
+
+      <ul>
+        <li><a href="#Introduction">Introduction</a></li>
+        <li><a href="#hellow_world">Hellow World</a></li>
+        <li><a href="#introducing_JSX">Introducing JSX</a></li>
+        <li><a href="#rendering_Elements">Rendering Elements</a></li>
+        <li><a href="#component_and _props">Componenent and Props</a></li>
+        <li><a href="#State_life_cycle">State and Life Cycle</a></li>
+        <li><a href="#Handling_events">Handling Events</a></li>
+        <li><a href="#conditional_rendering">Conditional Rendering</a></li>
+        <li><a href="#list_keys">List And Keys</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#lifting_state">Lifting State Up</a></li>
+        <li><a href="#Thing_In_React">Thinking in Ract</a></li>
+        <li><a href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="main-header">Introduction</header>
+        <article>
+          <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.</p>
+          <p>
+            React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.
+          </p>
+          <ul>
+            <li>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.</li>
+            <li>Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+            </li>
+          </ul>
+        </article>
+      
+      </section>
+<section class="main-section" id="Hellow_world">
+  <header class="main-header">Hellow World</header>
+
+  <article>
+    <span><small>the smallest example looks like this</small></span>
+    <div class="code">
+     <pre>
+      <code class="language-js">
+        ReactDom.render(
+          &lt;h1&gt; Hellow world! &gt;/h1&gt;,
+          document.getElementById('root')
+        );
+      </code>
+     </pre>
+    </div>
+    <p>Click this link <em><a href="">Try it on CodePen</a></em>  to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.</p>
+
+    <ul>
+      <li>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.</li>
+      <li>Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+      </li>
+    </ul>
+  </article>
+</section>
+      <section class="main-section" id="Introducing_JSX">
+        <header class="main-header">Introducing JSX</header>
+        <article>
+          <div class="code">
+            <pre><code class="language-js">
+              const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+            </code></pre>
+          </div>
+          <p>This funny tag syntax is neither a string nor HTML. It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript. JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.</p>
+          <span><small>Embedding Expressions in JSX</small></span>
+          <div class="code">
+            <pre><code class="language-js">
+              const name = 'Josh Perez';
+              const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
+              ReactDOM.render(
+                element,
+                document.getElementById('root')
+              );
+            </code></pre>
+          </div>
+          <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions. In the example below, we embed the result of calling a JavaScript function, formatName(user), into an &lt;h1&gt; element.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Introducing_JSX">
+        <header class="main-header">Introducing JSX</header>
+        <article>
+          <div class="code">
+            <pre><code class="language-js">
+              const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+            </code></pre>
+          </div>
+          <p>This funny tag syntax is neither a string nor HTML. It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript. JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.</p>
+          <span><small>Embedding Expressions in JSX</small></span>
+          <div class="code">
+            <pre><code class="language-js">
+              const name = 'Josh Perez';
+              const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
+              ReactDOM.render(
+                element,
+                document.getElementById('root')
+              );
+            </code></pre>
+          </div>
+          <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions. In the example below, we embed the result of calling a JavaScript function, formatName(user), into an &lt;h1&gt; element.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Rendering_elements">
+        <header class="main-header">Rendering Elements</header>
+        <article>
+          <p>Elements are the smallest building blocks of React apps. An element describes what you want to see on the screen. Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
+          <div class="code">
+            <pre><code class="language-js">
+              const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+            </code></pre>
+          </div>
+          <p class="code-backgroundYellow">Note: One might confuse elements with a more widely known concept of “components”. We will introduce components in the next section. Elements are what components are “made of”, and we encourage you to read this section before jumping ahead.</p>
+          <p>We call this a “root” DOM node because everything inside it will be managed by React DOM. Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like. To render a React element into a root DOM node, pass both to ReactDOM.render():</p>
+          <div class="code">
+            <pre><code class="language-js">
+              const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+              ReactDOM.render(element, document.getElementById('root'));
+            </code></pre>
+          </div>
+          <p class="code-backgroundBlue">Note: This is the starting point for most of the sections in the documentation. Please make sure you are familiar with this concept before moving to the next sections.</p>
+        </article>
+      </section>
+
+    </div>
+  </div>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>
